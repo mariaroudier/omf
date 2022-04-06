@@ -5,22 +5,28 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
    <link rel="stylesheet" type="text/css"  href="style.css">
    <link rel="stylesheet" type="text/css"  href="normalize.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
    <title>Ohmyfood</title>
 </head>
 
 <body>
    <header>
-      <img src="images/logo/ohmyfood.png" alt="logo ohmyfood">
+      <img id="logo-top" src="images/logo/ohmyfood.png" alt="logo ohmyfood">
+      <div id="location-bar">
+         <img  class="icons" src="images/icons/location-pin.png">
+         <p class="texte-style-normal">Paris, Belleville</p>
+      </div>
    </header>
 
-   <div id="location-bar">
-      <img  class="icons" src="images/icons/location-pin.png">
-      <p class="texte-style-normal">Paris, Belleville</p>
-   </div>
    <article id="reserver-menu">
       <h1>Réserver le menu qui vous convient</h1>
       <p class="texte-style-normal">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-      <button>Explorer nos restaurants</button>
+      <button><p class="texte-style-normal">Explorer nos restaurants</p></button>
    </article>
 
    <section class="block">

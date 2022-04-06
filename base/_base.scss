@@ -1,0 +1,46 @@
+html{
+      height:100%;
+}
+
+body{
+      font-family:'Roboto', sans-serif;
+      height: 100%;
+      display: block;
+      width: 100%;
+}
+
+*{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+    
+a{
+      display: flex;
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+}
+
+.texte-style-normal{
+      font-weight: 400;
+      font-size: 15px;
+      color: #353535;
+}
+
+.texte-style-strong{
+      font-weight: 500;
+}
+
+h1{
+      font-size: 20px;
+      font-weight: 700;
+}
+
+h2{
+      font-weight: 700;
+}
+
+.icons{
+      width: 15px;
+      height: 15px;
+}
