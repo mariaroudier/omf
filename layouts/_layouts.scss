@@ -1,24 +1,43 @@
+@mixin flex-column {
+      display: flex;
+      flex-direction: column;
+      gap:$edge-standart;
+}
+
+@mixin flex-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+}
+
+@mixin border{
+      border: none;
+      border-radius: 25px;
+}
+
 header{
       display: flex;
       flex-direction: column;
 }
 
 #logo-top{
-      width: 100%;
-      padding-top: 20px;
-      padding-bottom: $edge-standart;
       padding-left: 30%;
       padding-right: 30%;
+      padding-top: $pt;
+      padding-bottom: $pb;
+      width: 100%;
       box-shadow: $shadow;
       z-index: 2;
 }
 
 #location-bar{
-      display: flex;
+      @include flex-row();
       background-color: #E5E5E5;
-      padding-top: $edge-standart;
-      padding-bottom: $edge-standart;
       justify-content: center;
+      padding-left: $pl;
+      padding-right: $pr;
+      padding-top: $pt;
+      padding-bottom: $pb;
       z-index: 1;
       gap:5px;
 }
@@ -27,28 +46,62 @@ header{
       color:#353535;
 } 
 
+
+/* Reserver */
+
 #reserver-menu{
-      background-color: #F6F6F6;
-      display: flex;
-      flex-direction: column;
+      @include flex-column();
+      background-color:$color-background;
       align-items: center;
       text-align: center;
       gap:$edge-standart;
-      padding-left:15%;
-      padding-right:15%;
+      padding-left:$pl;
+      padding-right:$pr;
       padding-top:35px;
       padding-bottom: 40px;
 }
 
 button {
+      @include border;
       background: linear-gradient(319deg, #9356DC, #FF79DA);
       width: 70%;
       height: 49px;
       margin-top: 15px;
-      border: none;
-      border-radius: 25px;
       .texte-style-normal{
             color: white;
       }
 }
 
+
+/* Fonctionnement */
+
+.block{
+      @include flex-column();
+      padding-left: $pl;
+      padding-right: $pr;
+      padding-top: 40px;
+      padding-bottom: 40px;
+}
+
+#steps-area{
+      @include flex-column();
+      padding-left: 10px;
+}
+
+.steps-carte{
+      @include flex-row();
+      @include border();
+      position: relative;
+      justify-content: flex-start;
+      background-color: $color-background;
+      box-shadow: $shadow;
+      padding-left: 33px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      gap:15px;
+}
+
+.numbers{
+      position: absolute;
+      left: -10px;
+}
