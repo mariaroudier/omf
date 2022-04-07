@@ -1,3 +1,5 @@
+/* Mixins */
+
 @mixin flex-column {
       display: flex;
       flex-direction: column;
@@ -14,6 +16,9 @@
       border: none;
       border-radius: 25px;
 }
+
+
+/* Header */
 
 header{
       display: flex;
@@ -55,8 +60,8 @@ header{
       align-items: center;
       text-align: center;
       gap:$edge-standart;
-      padding-left:$pl;
-      padding-right:$pr;
+      padding-left:12%;
+      padding-right:12%;
       padding-top:35px;
       padding-bottom: 40px;
 }
@@ -104,4 +109,73 @@ button {
 .numbers{
       position: absolute;
       left: -10px;
+}
+
+/* Restaurants */
+
+.restaurants{
+      background-color: $color-background;
+}
+
+#cartes-box{
+      @include flex-column();
+}
+
+.carte-de-rest{
+      @include flex-row;
+      @include border();
+      flex-wrap: wrap;
+      background-color: white;
+      box-shadow: $shadow;
+      justify-content: space-between;
+      height: 251px;
+}
+
+.box-img{
+      height: 70%;
+      width: 100%;
+      display: flex;
+      position: relative;
+}
+
+.box-img img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      border: none;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+}
+
+.box-nouveau{
+      position: absolute;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+}
+
+.box-img .texte-style-strong{
+      background-color: $color-tertiaire;
+      color: #139273;
+      border: none;
+      border-radius: 3px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-top: 20px;
+      margin-right: 20px;
+}
+
+.carte-texte{
+      height: 100%;
+      padding: $edge-standart;
+      gap: 6px;
+      display: flex;
+      flex-direction: column;
+}
+
+.hearts{
+      margin: $edge-standart;
 }
