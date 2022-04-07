@@ -59,7 +59,6 @@ header{
       background-color:$color-background;
       align-items: center;
       text-align: center;
-      gap:$edge-standart;
       padding-left:12%;
       padding-right:12%;
       padding-top:35px;
@@ -72,6 +71,7 @@ button {
       width: 70%;
       height: 49px;
       margin-top: 15px;
+      box-shadow: $shadow;
       .texte-style-normal{
             color: white;
       }
@@ -88,9 +88,23 @@ button {
       padding-bottom: 40px;
 }
 
+.fonctionnement{
+      @media screen and (min-width: 600px){
+            display: flex;
+            h2{
+                  text-align: center;
+            }
+      }
+}
+
 #steps-area{
       @include flex-column();
       padding-left: 10px;
+      @media screen and (min-width: 600px){
+            width: 70%;
+            align-self: center;
+            gap:25px;
+      }
 }
 
 .steps-carte{
@@ -104,10 +118,17 @@ button {
       padding-top: 18px;
       padding-bottom: 18px;
       gap:15px;
+      @media screen and (min-width: 600px){
+            padding-left: 20%;
+      }
 }
 
 .numbers{
       position: absolute;
+      @media screen and (min-width: 600px){
+            position: relative;
+            left: 0;
+      }
       left: -10px;
 }
 
@@ -169,7 +190,6 @@ button {
 }
 
 .carte-texte{
-      height: 100%;
       padding: $edge-standart;
       gap: 6px;
       display: flex;
@@ -178,4 +198,39 @@ button {
 
 .hearts{
       margin: $edge-standart;
+}
+
+/* Footer */
+
+footer{
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      background-color: #353535;
+      padding-top:40px;
+      padding-bottom:40px;
+      padding-left: 7%;
+      padding-right: 7%;
+            li{
+                  @include flex-row;
+                  gap:10px;
+            }
+            img{
+                  color: white;
+                  width: 30%;
+                  margin-bottom: 20px;
+            }
+            a{
+                  color:white;
+            }
+}
+
+.footer-icon{
+      margin-bottom: 0;
+}
+
+.made-by{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
 }

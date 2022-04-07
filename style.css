@@ -95,7 +95,6 @@ header {
   background-color: #F6F6F6;
   align-items: center;
   text-align: center;
-  gap: 15px;
   padding-left: 12%;
   padding-right: 12%;
   padding-top: 35px;
@@ -109,6 +108,7 @@ button {
   width: 70%;
   height: 49px;
   margin-top: 15px;
+  box-shadow: 0 3px 4px #cfcfcf;
 }
 button .texte-style-normal {
   color: white;
@@ -125,11 +125,27 @@ button .texte-style-normal {
   padding-bottom: 40px;
 }
 
+@media screen and (min-width: 600px) {
+  .fonctionnement {
+    display: flex;
+  }
+  .fonctionnement h2 {
+    text-align: center;
+  }
+}
+
 #steps-area {
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding-left: 10px;
+}
+@media screen and (min-width: 600px) {
+  #steps-area {
+    width: 70%;
+    align-self: center;
+    gap: 25px;
+  }
 }
 
 .steps-carte {
@@ -147,10 +163,21 @@ button .texte-style-normal {
   padding-bottom: 18px;
   gap: 15px;
 }
+@media screen and (min-width: 600px) {
+  .steps-carte {
+    padding-left: 20%;
+  }
+}
 
 .numbers {
   position: absolute;
   left: -10px;
+}
+@media screen and (min-width: 600px) {
+  .numbers {
+    position: relative;
+    left: 0;
+  }
 }
 
 /* Restaurants */
@@ -215,7 +242,6 @@ button .texte-style-normal {
 }
 
 .carte-texte {
-  height: 100%;
   padding: 15px;
   gap: 6px;
   display: flex;
@@ -224,6 +250,42 @@ button .texte-style-normal {
 
 .hearts {
   margin: 15px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  background-color: #353535;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+footer li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+footer img {
+  color: white;
+  width: 30%;
+  margin-bottom: 20px;
+}
+footer a {
+  color: white;
+}
+
+.footer-icon {
+  margin-bottom: 0;
+}
+
+.made-by {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
