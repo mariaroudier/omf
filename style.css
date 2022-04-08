@@ -80,7 +80,7 @@ header {
   padding-top: 15px;
   padding-bottom: 15px;
   z-index: 1;
-  gap: 5px;
+  gap: 2%;
 }
 
 #location-bar .texte-style-normal {
@@ -138,13 +138,14 @@ button .texte-style-normal {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding-left: 10px;
+  padding-left: 3%;
 }
 @media screen and (min-width: 600px) {
   #steps-area {
     width: 70%;
     align-self: center;
     gap: 25px;
+    padding-left: 0;
   }
 }
 
@@ -158,14 +159,14 @@ button .texte-style-normal {
   justify-content: flex-start;
   background-color: #F6F6F6;
   box-shadow: 0 3px 4px #cfcfcf;
-  padding-left: 33px;
+  padding-left: 12%;
   padding-top: 18px;
   padding-bottom: 18px;
-  gap: 15px;
+  gap: 12%;
 }
 @media screen and (min-width: 600px) {
   .steps-carte {
-    padding-left: 20%;
+    padding-left: 5%;
   }
 }
 
@@ -233,23 +234,26 @@ button .texte-style-normal {
   color: #139273;
   border: none;
   border-radius: 3px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 7%;
+  padding-right: 7%;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 20px;
-  margin-right: 20px;
+  margin-right: 7%;
 }
 
 .carte-texte {
-  padding: 15px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   gap: 6px;
   display: flex;
   flex-direction: column;
 }
 
 .hearts {
-  margin: 15px;
+  margin: 4%;
 }
 
 /* Footer */
@@ -267,12 +271,23 @@ footer li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 2%;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 600px) {
+  footer li {
+    justify-content: center;
+  }
 }
 footer img {
   color: white;
   width: 30%;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 600px) {
+  footer img {
+    align-self: center;
+  }
 }
 footer a {
   color: white;
