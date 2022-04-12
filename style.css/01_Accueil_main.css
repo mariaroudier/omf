@@ -1,6 +1,6 @@
+/* Mixins */
 /* Police */
 /* Padding */
-/* Mixins */
 html {
   height: 100%;
 }
@@ -47,8 +47,8 @@ h2 {
 }
 
 .box-icon {
-  width: 21px;
-  height: 22px;
+  width: 24px;
+  height: 25px;
 }
 
 .icons {
@@ -56,59 +56,6 @@ h2 {
   padding-bottom: 10%;
   text-align: center;
   width: 100%;
-}
-
-/* Header elements*/
-#location-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #E5E5E5;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 7%;
-  padding-right: 7%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  z-index: 1;
-  gap: 2%;
-}
-
-#location-bar i {
-  color: #353535;
-}
-
-#location-bar .texte-style-normal {
-  color: #353535;
-}
-
-/* Reserver */
-#reserver-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 15px;
-  background-color: #F6F6F6;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  padding-left: 12%;
-  padding-right: 12%;
-  padding-top: 35px;
-  padding-bottom: 40px;
 }
 
 /* Fonctionnement */
@@ -127,135 +74,7 @@ h2 {
   padding-bottom: 40px;
 }
 
-@media screen and (min-width: 600px) {
-  .fonctionnement {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .fonctionnement h2 {
-    text-align: center;
-  }
-}
-
-#steps-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 15px;
-  padding-left: 3%;
-}
-
-@media screen and (min-width: 600px) {
-  #steps-area {
-    width: 70%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    gap: 25px;
-    padding-left: 0;
-  }
-}
-
-.icon-absolute {
-  position: absolute;
-  left: -10px;
-}
-
-.steps-carte {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: none;
-  border-radius: 25px;
-  position: relative;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  background-color: #F6F6F6;
-  -webkit-box-shadow: 0 3px 4px #cfcfcf;
-          box-shadow: 0 3px 4px #cfcfcf;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  gap: 12%;
-  padding-left: 12%;
-}
-
-@media screen and (min-width: 600px) {
-  .steps-carte {
-    padding-left: 5%;
-  }
-}
-
-.steps-carte i {
-  color: #7E7E7E;
-}
-
-.steps-carte .numbers {
-  text-align: center;
-  color: white;
-  background-color: #9356DC;
-  border: none;
-  border-radius: 10px;
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
-
 /* Restaurants */
-.restaurants {
-  background-color: #F6F6F6;
-}
-
-#cartes-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 15px;
-}
-
-.carte-de-rest {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: none;
-  border-radius: 25px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  background-color: white;
-  -webkit-box-shadow: 0 3px 4px #cfcfcf;
-          box-shadow: 0 3px 4px #cfcfcf;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: normal;
-      -ms-flex-align: normal;
-          align-items: normal;
-  height: 251px;
-  padding-bottom: 14px;
-}
-
 .box-img {
   height: 70%;
   width: 100%;
@@ -276,17 +95,6 @@ h2 {
   border-top-right-radius: 25px;
 }
 
-.box-nouveau {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 100%;
-}
-
 .box-img .texte-style-strong {
   background-color: #99E2D0;
   color: #139273;
@@ -303,26 +111,6 @@ h2 {
 @media screen and (min-width: 600px) {
   .box-img .texte-style-strong {
     margin-right: 2%;
-  }
-}
-
-.carte-texte {
-  margin-left: 4%;
-  gap: 6px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-
-@media screen and (min-width: 600px) {
-  .carte-texte {
-    margin-left: 2%;
   }
 }
 
@@ -439,5 +227,223 @@ footer a {
 .footer-icon {
   margin-bottom: 0;
   color: white;
+}
+
+/* Header elements*/
+#location-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #E5E5E5;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  z-index: 1;
+  gap: 2%;
+}
+
+#location-bar i {
+  color: #353535;
+}
+
+#location-bar .texte-style-normal {
+  color: #353535;
+}
+
+/* Reserver */
+#reserver-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  background-color: #F6F6F6;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 35px;
+  padding-bottom: 40px;
+}
+
+/* Fonctionnement */
+@media screen and (min-width: 600px) {
+  .fonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .fonctionnement h2 {
+    text-align: center;
+  }
+}
+
+#steps-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  padding-left: 3%;
+}
+
+@media screen and (min-width: 600px) {
+  #steps-area {
+    width: 70%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    gap: 25px;
+    padding-left: 0;
+  }
+}
+
+.icon-absolute {
+  position: absolute;
+  left: -10px;
+}
+
+.steps-carte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 25px;
+  position: relative;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #F6F6F6;
+  -webkit-box-shadow: 0 3px 4px #cfcfcf;
+          box-shadow: 0 3px 4px #cfcfcf;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  gap: 12%;
+  padding-left: 12%;
+}
+
+@media screen and (min-width: 600px) {
+  .steps-carte {
+    padding-left: 5%;
+  }
+}
+
+.steps-carte i {
+  color: #7E7E7E;
+}
+
+.steps-carte .numbers {
+  text-align: center;
+  color: white;
+  background-color: #9356DC;
+  border: none;
+  border-radius: 17px;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  -ms-border-radius: 17px;
+  -o-border-radius: 17px;
+}
+
+/* Restaurants */
+.restaurants {
+  background-color: #F6F6F6;
+}
+
+#cartes-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.carte-de-rest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 25px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: white;
+  -webkit-box-shadow: 0 3px 4px #cfcfcf;
+          box-shadow: 0 3px 4px #cfcfcf;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  height: 251px;
+  padding-bottom: 14px;
+}
+
+.box-nouveau {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.carte-texte {
+  margin-left: 4%;
+  gap: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+@media screen and (min-width: 600px) {
+  .carte-texte {
+    margin-left: 2%;
+  }
 }
 /*# sourceMappingURL=01_Accueil_main.css.map */

@@ -1,21 +1,4 @@
-/* Mixins */
 
-@mixin flex-column {
-      display: flex;
-      flex-direction: column;
-      gap:15px;
-}
-
-@mixin flex-row {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-}
-
-@mixin border-standart {
-      border: none;
-      border-radius: 25px;
-}
 
 
 
@@ -62,8 +45,8 @@ h2{
 }
 
 .box-icon{
-      width:21px;
-      height: 22px;
+      width:24px;
+      height: 25px;
 }
 
 .icons{

@@ -5,15 +5,24 @@ body{
 }
 
 header{
-      flex-direction: column;
+      flex-direction: row;
+      .box-icon{
+            position: absolute;
+            left: 4%;
+            top: 20px;
+            @media screen and (min-width: 600px){
+                  width: auto;
+                  height: auto;
+            }
+      }
+      .arrow{
+            color: #353535;
+            @media screen and (min-width: 600px){
+                  font-size: 35px;
+            }
+      }
 }
 
-.arrow{
-      position: absolute;
-      color: #353535;
-      left: 7%;
-      top: 15px;
-}
 
 
 /* Menu-all */
@@ -45,49 +54,72 @@ header{
       position: relative;
       margin-top:-10%;
       background-color: $color-background;
+      padding-left: 4%;
+      padding-right: 4%;
+      gap: 15px;
       @include border-standart;
-      padding-left: $pl;
-      padding-right: $pr;
-
+      button{
+            margin-bottom: 50px;
+            margin-top: 30px;
+            align-self: center;
+      }
 }
 
 .menu-titre{
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       padding-top: 30px;
-      padding-bottom: 30px;
+      padding-right: 6%;
+      h1{
+            font-family:'Shrikhand', cursive;
+            font-size: 25px;
+      }
+      i{
+            font-size: 25px;
+      }
 }
 
 .sous-titre{
       display: flex;
       flex-direction: column;
       width: 100%;
+      padding-top: 15px;
+      gap:5px;
 }
 
 hr{
-      border-color: $color-tertiaire;
-      border-width:2px;
+      border: 2px solid $color-tertiaire;
       width: 10%;
 }
 
 .menu-position{
+      @include border-standart;
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+      box-shadow: $shadow;
+      background-color: white;
       padding-top:16px;
+      padding-bottom:16px;
+      padding-right: 6%;
+      padding-left: 3%;
+      
 }
 
 .position-titre{
       display: flex;
       flex-direction: column;
-      gap: $edge-standart;
+      gap: 5px;
 }
 
 .box-check{
-      display: flex;
+      display: none;
+      background-color: $color-tertiaire;
 }
 
 .check-icon{
-      color: $color-tertiaire;
+      color: white;
 }
 
 

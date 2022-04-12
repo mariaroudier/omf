@@ -1,0 +1,134 @@
+/* Header elements*/
+
+#location-bar{
+      @include flex-row();
+      background-color: #E5E5E5;
+      justify-content: center;
+      padding-left: $pl;
+      padding-right: $pr;
+      padding-top: $pt;
+      padding-bottom: $pb;
+      z-index: 1;
+      gap:2%;
+            i{
+                  color: $color-demi-black;
+            }
+            .texte-style-normal{
+                  color:#353535;
+            } 
+}
+
+
+/* Reserver */
+
+#reserver-menu{
+      @include flex-column();
+      background-color:$color-background;
+      align-items: center;
+      text-align: center;
+      padding-left:12%;
+      padding-right:12%;
+      padding-top:35px;
+      padding-bottom: 40px;
+}
+
+
+/* Fonctionnement */
+
+.fonctionnement{
+      @media screen and (min-width: 600px){
+            display: flex;
+            h2{
+                  text-align: center;
+            }
+      }
+}
+
+#steps-area{
+      @include flex-column();
+      padding-left: 3%;
+      @media screen and (min-width: 600px){
+            width: 70%;
+            align-self: center;
+            gap:25px;
+            padding-left:0;
+      }
+}
+
+.icon-absolute{
+      position: absolute;
+      left: -10px;
+}
+
+.steps-carte{
+      @include flex-row();
+      @include border-standart;
+      position: relative;
+      justify-content: flex-start;
+      background-color: $color-background;
+      box-shadow: $shadow;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      gap:12%;
+      padding-left: 12%;
+      @media screen and (min-width: 600px){
+             padding-left: 5%;
+      }
+
+      i{
+            color:$color-dark-gris;
+      }
+      .numbers{
+            text-align: center;
+            color: white;
+            background-color: $color-primaire;
+            border: none;
+            border-radius: 17px;
+            padding-top: 20%;
+            padding-bottom: 20%;
+            -webkit-border-radius: 17px;
+            -moz-border-radius: 17px;
+            -ms-border-radius: 17px;
+            -o-border-radius: 17px;
+}
+}
+
+/* Restaurants */
+
+.restaurants{
+      background-color: $color-background;
+}
+
+#cartes-box{
+      @include flex-column();
+}
+
+.carte-de-rest{
+      @include flex-row;
+      @include border-standart;
+      flex-wrap: wrap;
+      background-color: white;
+      box-shadow: $shadow;
+      justify-content: space-between;
+      align-items: normal;
+      height: 251px;
+      padding-bottom: 14px;
+}
+
+.box-nouveau{
+      position: absolute;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+}
+
+.carte-texte{
+      @media screen and (min-width: 600px){
+            margin-left: 2%;
+      }
+      margin-left: 4%;
+      gap: 6px;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+}
