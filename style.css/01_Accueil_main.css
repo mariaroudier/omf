@@ -46,14 +46,16 @@ h2 {
   font-weight: 700;
 }
 
-#location-pot {
-  width: 15px;
-  height: 15px;
+.box-icon {
+  width: 21px;
+  height: 22px;
 }
 
 .icons {
-  width: 21px;
-  height: 22px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
+  width: 100%;
 }
 
 /* Header elements*/
@@ -78,6 +80,10 @@ h2 {
   padding-bottom: 15px;
   z-index: 1;
   gap: 2%;
+}
+
+#location-bar i {
+  color: #353535;
 }
 
 #location-bar .texte-style-normal {
@@ -155,6 +161,11 @@ h2 {
   }
 }
 
+.icon-absolute {
+  position: absolute;
+  left: -10px;
+}
+
 .steps-carte {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,10 +186,10 @@ h2 {
   background-color: #F6F6F6;
   -webkit-box-shadow: 0 3px 4px #cfcfcf;
           box-shadow: 0 3px 4px #cfcfcf;
-  padding-left: 12%;
   padding-top: 18px;
   padding-bottom: 18px;
   gap: 12%;
+  padding-left: 12%;
 }
 
 @media screen and (min-width: 600px) {
@@ -187,16 +198,18 @@ h2 {
   }
 }
 
-.numbers {
-  position: absolute;
-  left: -10px;
+.steps-carte i {
+  color: #7E7E7E;
 }
 
-@media screen and (min-width: 600px) {
-  .numbers {
-    position: relative;
-    left: 0;
-  }
+.steps-carte .numbers {
+  text-align: center;
+  color: white;
+  background-color: #9356DC;
+  border: none;
+  border-radius: 10px;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 /* Restaurants */
@@ -425,16 +438,6 @@ footer a {
 
 .footer-icon {
   margin-bottom: 0;
-}
-
-.made-by {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
+  color: white;
 }
 /*# sourceMappingURL=01_Accueil_main.css.map */

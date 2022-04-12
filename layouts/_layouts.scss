@@ -17,7 +17,7 @@ header{
 }
 
 button {
-      @include border;
+      @include border-standart;
       background: linear-gradient(319deg, #9356DC, #FF79DA);
       width: 70%;
       height: 49px;
@@ -64,10 +64,5 @@ footer{
 
 .footer-icon{
       margin-bottom: 0;
-}
-
-.made-by{
-      display: flex;
-      flex-direction: row;
-      width: 100%;
+      color: white;
 }

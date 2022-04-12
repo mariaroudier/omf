@@ -10,11 +10,14 @@
       padding-bottom: $pb;
       z-index: 1;
       gap:2%;
+            i{
+                  color: $color-demi-black;
+            }
+            .texte-style-normal{
+                  color:#353535;
+            } 
 }
 
-#location-bar .texte-style-normal{
-      color:#353535;
-} 
 
 
 /* Reserver */
@@ -62,30 +65,40 @@
       }
 }
 
+.icon-absolute{
+      position: absolute;
+      left: -10px;
+}
+
 .steps-carte{
       @include flex-row();
-      @include border;
+      @include border-standart;
       position: relative;
       justify-content: flex-start;
       background-color: $color-background;
       box-shadow: $shadow;
-      padding-left: 12%;
       padding-top: 18px;
       padding-bottom: 18px;
       gap:12%;
+      padding-left: 12%;
       @media screen and (min-width: 600px){
-            padding-left: 5%;
+             padding-left: 5%;
       }
+
+      i{
+            color:$color-dark-gris;
+      }
+      .numbers{
+            text-align: center;
+            color: white;
+            background-color: $color-primaire;
+            border: none;
+            border-radius: 10px;
+            padding-top: 10%;
+            padding-bottom: 10%;
+}
 }
 
-.numbers{
-      position: absolute;
-      @media screen and (min-width: 600px){
-            position: relative;
-            left: 0;
-      }
-      left: -10px;
-}
 
 /* Restaurants */
 
@@ -99,7 +112,7 @@
 
 .carte-de-rest{
       @include flex-row;
-      @include border;
+      @include border-standart;
       flex-wrap: wrap;
       background-color: white;
       box-shadow: $shadow;
