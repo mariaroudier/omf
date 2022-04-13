@@ -49,6 +49,8 @@ h2 {
 .box-icon {
   width: 24px;
   height: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .icons {
@@ -124,6 +126,7 @@ h2 {
 @media screen and (min-width: 600px) {
   .hearts {
     margin-right: 2%;
+    font-size: 20px;
   }
 }
 
@@ -131,28 +134,38 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 3px 4px #cfcfcf;
+          box-shadow: 0 3px 4px #cfcfcf;
+  height: 76px;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    padding: 53px;
+  }
 }
 
 #logo-top {
-  padding-left: 30%;
-  padding-right: 30%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  width: 100%;
-  -webkit-box-shadow: 0 3px 4px #cfcfcf;
-          box-shadow: 0 3px 4px #cfcfcf;
-  z-index: 2;
+  width: 40%;
 }
 
 button {
   border: none;
   border-radius: 25px;
-  background: linear-gradient(319deg, #9356DC, #FF79DA);
+  background: #9356dc;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), color-stop(98%, #ec73da), color-stop(99%, #ff79da));
+  background: linear-gradient(0deg, #9356dc 0%, #ec73da 98%, #ff79da 99%);
   width: 70%;
   height: 49px;
   margin-top: 15px;
@@ -162,6 +175,14 @@ button {
 
 button .texte-style-normal {
   color: white;
+}
+
+button:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), color-stop(98%, rgba(236, 115, 218, 0.9)), color-stop(99%, rgba(255, 121, 218, 0.9)));
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(236, 115, 218, 0.9) 98%, rgba(255, 121, 218, 0.9) 99%);
+  cursor: pointer;
+  -webkit-box-shadow: 0 3px 4px #838383;
+          box-shadow: 0 3px 4px #838383;
 }
 
 /* Footer */
@@ -253,12 +274,22 @@ footer a {
   gap: 2%;
 }
 
-#location-bar i {
+#location-bar .box-icon i {
   color: #353535;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #location-bar .texte-style-normal {
   color: #353535;
+}
+
+@media screen and (min-width: 600px) {
+  #location-bar {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 /* Reserver */
@@ -317,11 +348,6 @@ footer a {
   }
 }
 
-.icon-absolute {
-  position: absolute;
-  left: -10px;
-}
-
 .steps-carte {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -339,6 +365,9 @@ footer a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   background-color: #F6F6F6;
   -webkit-box-shadow: 0 3px 4px #cfcfcf;
           box-shadow: 0 3px 4px #cfcfcf;
@@ -350,7 +379,20 @@ footer a {
 
 @media screen and (min-width: 600px) {
   .steps-carte {
-    padding-left: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .steps-carte .steps-icon {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .steps-carte i {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
 }
 
@@ -358,18 +400,28 @@ footer a {
   color: #7E7E7E;
 }
 
-.steps-carte .numbers {
+.icon-absolute {
+  position: absolute;
+  left: -10px;
+  width: 26px;
+  height: 14px;
+}
+
+@media screen and (min-width: 600px) {
+  .icon-absolute {
+    position: relative;
+  }
+}
+
+.icon-absolute .numbers {
   text-align: center;
   color: white;
   background-color: #9356DC;
   border: none;
   border-radius: 17px;
-  padding-top: 20%;
-  padding-bottom: 20%;
-  -webkit-border-radius: 17px;
-  -moz-border-radius: 17px;
-  -ms-border-radius: 17px;
-  -o-border-radius: 17px;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /* Restaurants */
@@ -444,6 +496,7 @@ footer a {
 @media screen and (min-width: 600px) {
   .carte-texte {
     margin-left: 2%;
+    width: 70%;
   }
 }
 /*# sourceMappingURL=01_Accueil_main.css.map */

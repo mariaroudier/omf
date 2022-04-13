@@ -5,11 +5,10 @@ body{
 }
 
 header{
-      flex-direction: row;
+      box-shadow: none;
       .box-icon{
             position: absolute;
             left: 4%;
-            top: 20px;
             @media screen and (min-width: 600px){
                   width: auto;
                   height: auto;
@@ -17,6 +16,7 @@ header{
       }
       .arrow{
             color: #353535;
+            font-size: 20px;
             @media screen and (min-width: 600px){
                   font-size: 35px;
             }

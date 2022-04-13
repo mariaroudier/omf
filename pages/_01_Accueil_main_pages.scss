@@ -10,12 +10,17 @@
       padding-bottom: $pb;
       z-index: 1;
       gap:2%;
-            i{
+            .box-icon i{
                   color: $color-demi-black;
+                  padding-top: 5px;
+                  padding-bottom: 5px;
             }
             .texte-style-normal{
                   color:#353535;
-            } 
+            }
+      @media screen and (min-width: 600px){
+            align-items: center;
+      }
 }
 
 
@@ -55,16 +60,13 @@
       }
 }
 
-.icon-absolute{
-      position: absolute;
-      left: -10px;
-}
 
 .steps-carte{
-      @include flex-row();
+      @include flex-row;
       @include border-standart;
       position: relative;
       justify-content: flex-start;
+      align-items: baseline;
       background-color: $color-background;
       box-shadow: $shadow;
       padding-top: 18px;
@@ -72,11 +74,28 @@
       gap:12%;
       padding-left: 12%;
       @media screen and (min-width: 600px){
-             padding-left: 5%;
+            padding-left: 10%;
+            padding-right: 10%;
+            justify-content: space-around;
+            .steps-icon{
+                  order: 1;
+            }
+            i{
+                  order: 3;
+            }
       }
-
       i{
             color:$color-dark-gris;
+      }
+}
+
+.icon-absolute{
+      position: absolute;
+      left: -10px;
+      width: 26px;
+      height: 14px;
+      @media screen and (min-width: 600px){
+            position: relative;
       }
       .numbers{
             text-align: center;
@@ -84,13 +103,11 @@
             background-color: $color-primaire;
             border: none;
             border-radius: 17px;
-            padding-top: 20%;
-            padding-bottom: 20%;
-            -webkit-border-radius: 17px;
-            -moz-border-radius: 17px;
-            -ms-border-radius: 17px;
-            -o-border-radius: 17px;
-}
+            font-size: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+      }
+
 }
 
 /* Restaurants */
@@ -125,6 +142,7 @@
 .carte-texte{
       @media screen and (min-width: 600px){
             margin-left: 2%;
+            width: 70%;
       }
       margin-left: 4%;
       gap: 6px;
