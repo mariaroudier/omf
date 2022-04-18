@@ -11,6 +11,7 @@ body{
       height: 100%;
       display: block;
       width: 100%;
+      position: relative;
 }
 
 *{
@@ -47,8 +48,6 @@ h2{
 .box-icon{
       width:24px;
       height: 25px;
-      padding-top: 5px;
-      padding-bottom: 5px;
 }
 
 .icons{

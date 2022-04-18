@@ -10,6 +10,7 @@ body {
   height: 100%;
   display: block;
   width: 100%;
+  position: relative;
 }
 
 * {
@@ -49,8 +50,6 @@ h2 {
 .box-icon {
   width: 24px;
   height: 25px;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 .icons {
@@ -117,17 +116,52 @@ h2 {
 }
 
 .hearts {
+  font-size: 25px;
   margin-right: 4%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  position: relative;
+  width: 40px;
 }
 
 @media screen and (min-width: 600px) {
   .hearts {
     margin-right: 2%;
-    font-size: 20px;
+    font-size: 25px;
   }
+}
+
+.fa-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.full-hearts {
+  background: transparent;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  padding-top: 7px;
+}
+
+.fa-regular.fa-heart {
+  z-index: 2;
+  padding-top: 7px;
+}
+
+.fa-regular.fa-heart:hover {
+  color: transparent;
+}
+
+.fa-regular.fa-heart:hover ~ .full-hearts {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background: #9356dc;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), color-stop(98%, #ec73da), color-stop(99%, #ff79da));
+  background: linear-gradient(0deg, #9356dc 0%, #ec73da 98%, #ff79da 99%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
 }
 
 header {
@@ -248,6 +282,82 @@ footer a {
 .footer-icon {
   margin-bottom: 0;
   color: white;
+}
+
+/* Loading */
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  -webkit-transition: 5s all;
+  transition: 5s all;
+  opacity: 1;
+  -webkit-animation: show 5s;
+          animation: show 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  border: 20px solid #F6F6F6;
+  border-radius: 50%;
+  border-top-color: #9356dc;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: 4s spin infinite linear;
+          animation: 4s spin infinite linear;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@-webkit-keyframes show {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
 }
 
 /* Header elements*/

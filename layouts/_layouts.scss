@@ -28,13 +28,13 @@ button {
       .texte-style-normal{
             color: white;
       }
+      &:hover{
+            background: linear-gradient(0deg, rgba(147,86,220,0.9) 0%, rgba(236,115,218,0.9) 98%, rgba(255,121,218,0.9) 99%);
+            cursor: pointer;
+            box-shadow: $darken-shadow;
+      }
 }
 
-button:hover{
-      background: linear-gradient(0deg, rgba(147,86,220,0.9) 0%, rgba(236,115,218,0.9) 98%, rgba(255,121,218,0.9) 99%);
-      cursor: pointer;
-      box-shadow: $darken-shadow;
-}
 
 
 /* Footer */
