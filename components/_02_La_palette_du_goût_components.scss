@@ -57,11 +57,69 @@ header{
       padding-left: 4%;
       padding-right: 4%;
       gap: 15px;
+      @media screen and (min-width: 600px){
+            padding-left: 20%;
+            padding-right: 20%;
+      }
       @include border-standart;
       button{
             margin-bottom: 50px;
             margin-top: 30px;
             align-self: center;
+      }
+}
+
+.epd{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: relative;
+      gap: 15px;
+}
+      
+.entrees{
+      opacity: 0;
+      animation:cascade 1s;
+      animation-delay:1s;
+      transition-property: opacity;
+      animation-fill-mode: forwards;
+      -webkit-animation-fill-mode:forwards;
+}
+
+.plats{
+      opacity: 0;
+      animation:cascade 1s;
+      animation-delay:2s;
+      transition-property: opacity;
+      animation-fill-mode: forwards;
+      -webkit-animation-fill-mode:forwards;
+}
+
+.desserts{
+      opacity: 0;
+      animation:cascade 1s;
+      animation-delay:3s;
+      transition-property: opacity;
+      animation-fill-mode: forwards;
+      -webkit-animation-fill-mode:forwards;
+}
+
+
+@-webkit-keyframes cascade{
+      from{
+            opacity: 0;
+      }
+      to{
+            opacity: 1;
+      }
+}
+
+@keyframes cascade{
+      from{
+            opacity: 0;
+      }
+      to{
+            opacity: 1;
       }
 }
 
@@ -91,36 +149,89 @@ header{
 hr{
       border: 2px solid $color-tertiaire;
       width: 10%;
+      @media screen and (min-width: 600px){
+            width: 5%;
+      }
 }
 
 .menu-position{
       @include border-standart;
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
+      flex-direction: row;
       box-shadow: $shadow;
       background-color: white;
-      padding-top:16px;
-      padding-bottom:16px;
-      padding-right: 6%;
-      padding-left: 3%;
-      
+      overflow-x: hidden;
+      span{
+            align-self: center;
+            padding-right: 15px;
+      }
 }
 
 .position-titre{
       display: flex;
       flex-direction: column;
       gap: 5px;
+      width: 70%;
+      left: 0;
+      padding-top:16px;
+      padding-bottom:16px;
+      padding-left: 3%;
+      .texte-style-strong, .texte-style-normal{
+            text-overflow: ellipsis;
+            overflow:hidden;
+            white-space: nowrap;
+      }
+      
 }
 
 .box-check{
-      display: none;
+      display: flex;
+      margin-right: -77px;
       background-color: $color-tertiaire;
+      width: 20%;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      @media screen and (min-width: 600px){
+            width: 10%;
+      }
 }
 
 .check-icon{
       color: white;
+      align-self: center;
+      padding-left: 35%;
+      width: 100%;
+     
 }
 
+.menu-position:hover{
+      .box-check{
+            margin-right: 0px;
+            animation-name: panier;
+            animation-duration: 1s;
+      }
+}
 
+.menu-position:hover{
+      .check-icon{
+            transform: rotate(180deg);
+            animation-name:  rotating;
+            animation-duration: 2s;
+      }
+}
 
+@keyframes panier {
+      from {
+            margin-right: -77px;
+      }
+
+      to {
+            margin-right: 0px; 
+      }
+}
+
+@keyframes rotating {
+      from   { transform: rotate(0deg); }
+      to { transform: rotate(180deg); }
+    }

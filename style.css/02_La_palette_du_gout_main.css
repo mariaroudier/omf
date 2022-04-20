@@ -259,12 +259,86 @@ header .arrow {
   border-radius: 25px;
 }
 
+@media screen and (min-width: 600px) {
+  #menu {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
 #menu button {
   margin-bottom: 50px;
   margin-top: 30px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.epd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  position: relative;
+  gap: 15px;
+}
+
+.entrees {
+  opacity: 0;
+  -webkit-animation: cascade 1s;
+          animation: cascade 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.plats {
+  opacity: 0;
+  -webkit-animation: cascade 1s;
+          animation: cascade 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.desserts {
+  opacity: 0;
+  -webkit-animation: cascade 1s;
+          animation: cascade 1s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cascade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cascade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .menu-titre {
@@ -309,26 +383,36 @@ hr {
   width: 10%;
 }
 
+@media screen and (min-width: 600px) {
+  hr {
+    width: 5%;
+  }
+}
+
 .menu-position {
   border: none;
   border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-shadow: 0 3px 4px #cfcfcf;
           box-shadow: 0 3px 4px #cfcfcf;
   background-color: white;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-right: 6%;
-  padding-left: 3%;
+  overflow-x: hidden;
+}
+
+.menu-position span {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 15px;
 }
 
 .position-titre {
@@ -340,14 +424,99 @@ hr {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 5px;
+  width: 70%;
+  left: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 3%;
+}
+
+.position-titre .texte-style-strong, .position-titre .texte-style-normal {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .box-check {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -77px;
   background-color: #99E2D0;
+  width: 20%;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+@media screen and (min-width: 600px) {
+  .box-check {
+    width: 10%;
+  }
 }
 
 .check-icon {
   color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 35%;
+  width: 100%;
+}
+
+.menu-position:hover .box-check {
+  margin-right: 0px;
+  -webkit-animation-name: panier;
+          animation-name: panier;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.menu-position:hover .check-icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-animation-name: rotating;
+          animation-name: rotating;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes panier {
+  from {
+    margin-right: -77px;
+  }
+  to {
+    margin-right: 0px;
+  }
+}
+
+@keyframes panier {
+  from {
+    margin-right: -77px;
+  }
+  to {
+    margin-right: 0px;
+  }
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
 }
 /*# sourceMappingURL=02_La_palette_du_goût_main.css.map */
