@@ -47,18 +47,6 @@ h2 {
   font-weight: 700;
 }
 
-.box-icon {
-  width: 24px;
-  height: 25px;
-}
-
-.icons {
-  padding-top: 10%;
-  padding-bottom: 10%;
-  text-align: center;
-  width: 100%;
-}
-
 /* Fonctionnement */
 .block {
   display: -webkit-box;
@@ -219,6 +207,58 @@ button:hover {
           box-shadow: 0 3px 4px #838383;
 }
 
+.box-icon {
+  width: 24px;
+  height: 25px;
+}
+
+.icons {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+.icons:hover {
+  color: #9356DC;
+}
+
+.fa-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.full-hearts {
+  background: transparent;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  padding-top: 7px;
+}
+
+.fa-regular.fa-heart {
+  z-index: 2;
+  padding-top: 7px;
+}
+
+.fa-regular.fa-heart:hover {
+  color: transparent;
+}
+
+.fa-regular.fa-heart:hover ~ .full-hearts {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background: #9356dc;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), color-stop(98%, #ec73da), color-stop(99%, #ff79da));
+  background: linear-gradient(0deg, #9356dc 0%, #ec73da 98%, #ff79da 99%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 1s both;
+  transition: all 1s both;
+}
+
 /* Footer */
 footer {
   display: -webkit-box;
@@ -236,7 +276,7 @@ footer {
   padding-right: 7%;
 }
 
-footer li {
+footer .footer-lines {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,7 +294,7 @@ footer li {
 }
 
 @media screen and (min-width: 600px) {
-  footer li {
+  footer .footer-lines {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -279,6 +319,12 @@ footer a {
   color: white;
 }
 
+footer .box-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer-icon {
   margin-bottom: 0;
   color: white;
@@ -292,11 +338,9 @@ footer a {
   width: 100%;
   height: 100%;
   z-index: 3;
-  -webkit-transition: 5s all;
-  transition: 5s all;
   opacity: 1;
-  -webkit-animation: show 5s;
-          animation: show 5s;
+  -webkit-animation: montrer 3s;
+          animation: montrer 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -306,14 +350,15 @@ footer a {
   height: 100px;
   border: 20px solid #F6F6F6;
   border-radius: 50%;
+  border-color: white;
   border-top-color: #9356dc;
   left: 50%;
   top: 50%;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: 4s spin infinite linear;
-          animation: 4s spin infinite linear;
+  -webkit-animation: 1s spin infinite linear;
+          animation: 1s spin infinite linear;
 }
 
 @-webkit-keyframes spin {
@@ -338,22 +383,52 @@ footer a {
   }
 }
 
-@-webkit-keyframes show {
-  from {
+@-webkit-keyframes montrer {
+  0% {
     opacity: 1;
   }
-  to {
+  30% {
+    opacity: 0.9;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    opacity: 0.7;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  70% {
+    opacity: 0.5;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
     opacity: 0;
     -webkit-transform: scale(0);
             transform: scale(0);
   }
 }
 
-@keyframes show {
-  from {
+@keyframes montrer {
+  0% {
     opacity: 1;
   }
-  to {
+  30% {
+    opacity: 0.9;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    opacity: 0.7;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  70% {
+    opacity: 0.5;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
     opacity: 0;
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -487,6 +562,10 @@ footer a {
   padding-left: 12%;
 }
 
+.steps-carte i {
+  color: #7E7E7E;
+}
+
 @media screen and (min-width: 600px) {
   .steps-carte {
     padding-left: 10%;
@@ -504,10 +583,6 @@ footer a {
         -ms-flex-order: 3;
             order: 3;
   }
-}
-
-.steps-carte i {
-  color: #7E7E7E;
 }
 
 .icon-absolute {
@@ -609,4 +684,4 @@ footer a {
     width: 70%;
   }
 }
-/*# sourceMappingURL=01_Accueil_main.css.map */
+/*# sourceMappingURL=Accueil_main.css.map */
