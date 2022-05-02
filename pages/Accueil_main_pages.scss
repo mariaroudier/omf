@@ -59,10 +59,11 @@
       }
 }
 
+
 /* Header elements*/
 
 #location-bar{
-      @include flex-row();
+      @include flex-row;
       background-color: #E5E5E5;
       justify-content: center;
       padding-left: $pl;
