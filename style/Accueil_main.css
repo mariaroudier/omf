@@ -185,6 +185,10 @@ header {
 button {
   border: none;
   border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
   background: #9356dc;
   background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), color-stop(98%, #ec73da), color-stop(99%, #ff79da));
   background: linear-gradient(0deg, #9356dc 0%, #ec73da 98%, #ff79da 99%);
@@ -218,10 +222,6 @@ button:hover {
   text-align: center;
   width: 100%;
   font-size: 20px;
-}
-
-.icons:hover {
-  color: #9356DC;
 }
 
 .fa-heart {
@@ -546,6 +546,10 @@ footer .box-icon {
           align-items: center;
   border: none;
   border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
   position: relative;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -583,6 +587,10 @@ footer .box-icon {
         -ms-flex-order: 3;
             order: 3;
   }
+}
+
+.steps-icon i:hover {
+  color: #9356DC;
 }
 
 .icon-absolute {
@@ -638,6 +646,10 @@ footer .box-icon {
           align-items: center;
   border: none;
   border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: white;

@@ -122,7 +122,6 @@
       }
 }
 
-
 .steps-carte{
       @include flex-row;
       @include border-standart;
@@ -149,6 +148,10 @@
                   order: 3;
             }
       }
+}
+
+.steps-icon i:hover{
+      color: $color-primaire;
 }
 
 .icon-absolute{

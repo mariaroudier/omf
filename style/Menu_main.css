@@ -34,6 +34,10 @@ header {
 button {
   border: none;
   border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
   background: #9356dc;
   background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), color-stop(98%, #ec73da), color-stop(99%, #ff79da));
   background: linear-gradient(0deg, #9356dc 0%, #ec73da 98%, #ff79da 99%);
@@ -69,10 +73,6 @@ button:hover {
   font-size: 20px;
 }
 
-.icons:hover {
-  color: #9356DC;
-}
-
 .fa-heart {
   position: absolute;
   top: 0;
@@ -104,8 +104,8 @@ button:hover {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 1s both;
+  transition: all 1s both;
 }
 
 /* Footer */
@@ -252,6 +252,10 @@ header .arrow {
   font-size: 20px;
 }
 
+header .arrow:hover {
+  color: #353535;
+}
+
 @media screen and (min-width: 600px) {
   header .arrow {
     font-size: 35px;
@@ -303,6 +307,10 @@ header .arrow {
   gap: 15px;
   border: none;
   border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 
 @media screen and (min-width: 600px) {
@@ -481,6 +489,10 @@ hr {
 .menu-position {
   border: none;
   border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,4 +582,4 @@ hr {
   -webkit-transition: all 2s;
   transition: all 2s;
 }
-/*# sourceMappingURL=02_La_palette_du_gout_main.css.map */
+/*# sourceMappingURL=Menu_main.css.map */
