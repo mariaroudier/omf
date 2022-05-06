@@ -76,7 +76,11 @@ button {
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color:transparent;
-      transition: all 1s both;
+      transition: all 1s;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -ms-transition: all 1s;
+      -o-transition: all 1s;
 }
 
 /* Footer */

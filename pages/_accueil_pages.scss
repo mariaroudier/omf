@@ -25,6 +25,7 @@
       position: absolute;
       transform: translate(-50%, -50%);
       animation:1s spin infinite linear;
+      -webkit-animation:1s spin infinite linear;
 }
 
 
@@ -94,7 +95,7 @@
       align-items: center;
       text-align: center;
       padding-left:12%;
-      padding-right:12%;
+      padding-right:15%;
       padding-top:35px;
       padding-bottom: 40px;
 }

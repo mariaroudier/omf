@@ -337,6 +337,7 @@ footer .box-icon {
   top: 0;
   width: 100%;
   height: 100%;
+  background-color: white;
   z-index: 3;
   opacity: 1;
   -webkit-animation: montrer 3s;
@@ -388,24 +389,16 @@ footer .box-icon {
     opacity: 1;
   }
   30% {
-    opacity: 0.9;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
+    opacity: 1;
+}
   50% {
-    opacity: 0.7;
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    opacity: 0.8;
   }
-  70% {
-    opacity: 0.5;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+  60% {
+    opacity: 0.6;
   }
   100% {
     opacity: 0;
-    -webkit-transform: scale(0);
-            transform: scale(0);
   }
 }
 
@@ -414,24 +407,16 @@ footer .box-icon {
     opacity: 1;
   }
   30% {
-    opacity: 0.9;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    opacity: 1;
   }
   50% {
-    opacity: 0.7;
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    opacity: 0.8;
   }
-  70% {
-    opacity: 0.5;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+  60% {
+    opacity: 0.6;
   }
   100% {
     opacity: 0;
-    -webkit-transform: scale(0);
-            transform: scale(0);
   }
 }
 
@@ -697,3 +682,4 @@ footer .box-icon {
   }
 }
 /*# sourceMappingURL=Accueil_main.css.map */
+
